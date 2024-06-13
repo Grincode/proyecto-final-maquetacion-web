@@ -2,33 +2,43 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; /* Esto mantiene el ancho y alto a pesar de padding y border*/
+  box-sizing: border-box;
+  /* Esto mantiene el ancho y alto a pesar de padding y border*/
   font-family: "Inconsolata", monospace;
-  list-style: none; /* Quitar los puntos e decoración de las listas */
-  text-decoration: none; /* Esto quita el subrayado de los enlaces */
+  list-style: none;
+  /* Quitar los puntos e decoración de las listas */
+  text-decoration: none;
+  /* Esto quita el subrayado de los enlaces */
   color: white;
 }
 
 header {
-  position: fixed; /* Esto hace que el haader se quede fijo en la parte superior */
+  position: fixed;
+  /* Esto hace que el haader se quede fijo en la parte superior */
   right: 0;
   top: 0;
-  z-index: 100; /* Esto hace que el header se muestre por encima*/
+  z-index: 100;
+  /* Esto hace que el header se muestre por encima*/
   width: 100%;
-  display: flex; /* Esto hará que los elementos se pongan en linea */
-  align-items: center; /* Centra verticalmente */
-  justify-content: space-between; /* Que los elementos se separen */
+  display: flex;
+  /* Esto hará que los elementos se pongan en linea */
+  align-items: center;
+  /* Centra verticalmente */
+  justify-content: space-between;
+  /* Que los elementos se separen */
   padding: 15px 3%;
   background-color: transparent;
 }
 
 .logo {
   font-size: 30px;
-  font-weight: 800; /* este es el grueso de las letras */
+  font-weight: 800;
+  /* este es el grueso de las letras */
 }
 
 .navlist {
-  display: flex; /*Esto sirve para que el navbar se comporte como un contenedor flexible */
+  display: flex;
+  /*Esto sirve para que el navbar se comporte como un contenedor flexible */
 }
 
 .navlist a {
@@ -50,8 +60,10 @@ header {
 
 #menu-icon {
   font-size: 35px;
-  z-index: 101; /* Esto hace que el icono de menu se quede por encima de otros elementos */
+  z-index: 101;
+  /* Esto hace que el icono de menu se quede por encima de otros elementos */
   cursor: pointer;
+  display: none;
 }
 
 #menu-toggle {
@@ -267,7 +279,9 @@ section {
     margin: 7px 0;
   }
 
-  #menu-toggle:checked + label.menu-icon-action + ul {
+  .navlist.open {
     right: 0;
   }
+
+
 }
